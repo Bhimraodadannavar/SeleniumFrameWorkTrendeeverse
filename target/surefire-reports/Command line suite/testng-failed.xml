@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.practice.TestNGClass">
+        <methods>
+          <include name="suitesetUp"/>
+          <include name="testSetUp"/>
+          <include name="suiteTearDown"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- com.practice.TestNGClass -->
+      <class name="com.ecommerce.myaddress.AddressModuleTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.ecommerce.myaddress.AddressModuleTest -->
+      <class name="com.ecommerse.addtocart.CartTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.ecommerse.addtocart.CartTest -->
+      <class name="com.ecommerse.merchantlogin1.MerchantLoginTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="MerchantAddingProduct"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.ecommerse.merchantlogin1.MerchantLoginTest -->
+      <class name="com.practice.SampleTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="hi"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.practice.SampleTest -->
+      <class name="com.ecommerce.wishlist.WishListTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="AddingproductToTheWishList"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.ecommerce.wishlist.WishListTest -->
+      <class name="com.ecommerce.myaddress.WishListTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="AddingproductToTheWishList"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.ecommerce.myaddress.WishListTest -->
+      <class name="com.ecommerce.myaddress.CartTest">
+        <methods>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
+        </methods>
+      </class> <!-- com.ecommerce.myaddress.CartTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

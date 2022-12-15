@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.ecommerce.myaddress.FacebookTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.ecommerce.myaddress.FacebookTest">
+        <methods>
+          <include name="loginFacebook"/>
+        </methods>
+      </class> <!-- com.ecommerce.myaddress.FacebookTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.ecommerce.myaddress.FacebookTest] -->
