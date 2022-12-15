@@ -43,6 +43,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CartTest extends BaseClass
 {
+	// 2nd Commit
 
 	@Test()
 	public void AddingProductToTheCart()
