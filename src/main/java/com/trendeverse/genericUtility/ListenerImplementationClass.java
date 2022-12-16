@@ -77,7 +77,7 @@ public class ListenerImplementationClass implements ITestListener
 		//		test1.fail(result.getThrowable());
 
 		String screenShot = ThreadSafe.getwebdriverUtility().takesscreenshot2();
-		ThreadSafe.getExtentTest().addScreenCaptureFromBase64String(screenShot,result.getMethod().getMethodName());
+		ThreadSafe.getExtentTest().addScreenCaptureFromBase64String(screenShot);
 
 
 	}
