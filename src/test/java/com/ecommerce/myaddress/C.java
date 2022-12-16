@@ -7,5 +7,6 @@ public class C {
 		System.out.println("Hi");// TODO Auto-generated method stub
 
 	}
+	
 
 }
