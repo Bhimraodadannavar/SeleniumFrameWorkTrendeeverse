@@ -19,9 +19,7 @@ public class AddAddressPage
 	
 	
 	public AddAddressPage(WebDriver driver)
-	{
-		PageFactory.initElements(driver, this );
-	}
+	{}
 	/**
 	 * this method is used to User click on account settings button
 	 */
