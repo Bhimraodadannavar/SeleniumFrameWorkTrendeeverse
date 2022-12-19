@@ -83,8 +83,8 @@ public class BaseClass
 	@AfterMethod(alwaysRun = true)
 	public void methodtearDownSetUp() throws InterruptedException
 	{
-		home.handleclickInteractedOnAccountSettings(wu);
-		home.clickOnLogOutButton();
+//		home.handleclickInteractedOnAccountSettings(wu);
+//		home.clickOnLogOutButton();
 		
 	}
 	
@@ -94,6 +94,6 @@ public class BaseClass
 	@AfterClass(alwaysRun = true)
 	public void classTearDownSetup()
 	{
-		wu.closeBrowser(excelUtility,pFileUtility);
+		//wu.closeBrowser(excelUtility,pFileUtility);
 	}
 }
