@@ -20,11 +20,11 @@ public class FacebookTest
 		WebDriver driver= new ChromeDriver();
 		String url = System.getProperty("url");
 		String username = System.getProperty("username");
-	    String pasword = System.getProperty("password");
+	    String password = System.getProperty("password");
 	    
 		driver.get(url);
 		driver.findElement(By.id("email")).sendKeys(username);
-		driver.findElement(By.id("pass")).sendKeys(pasword);
+		driver.findElement(By.id("pass")).sendKeys(password);
 		driver.findElement(By.name("login")).click();
 		
 		

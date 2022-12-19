@@ -17,7 +17,7 @@ public class DataProvider1
 	@Test(dataProvider="getData")
 	public void test1(String cityName,int Pincode)
 	{
-		System.out.println("city name----> "+cityName+"Pincode---->"+Pincode);
+		System.out.println("city name----> "+cityName+"    Pincode---->"+Pincode);
 	}
 	
 	@DataProvider

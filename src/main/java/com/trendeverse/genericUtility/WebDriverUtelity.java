@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.io.Files;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import okio.Timeout;
 
 
 /**
@@ -35,7 +36,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class WebDriverUtelity
 {
-	private static WebDriver driver;
+	private  WebDriver driver;
 	private Actions act;
 	private WebDriverWait wait;
 	private Select sel;
@@ -80,7 +81,7 @@ public class WebDriverUtelity
 	 * @param element  
 	 */
 
-	public void mouseOveronElement(WebDriver driver, WebElement element)
+	public void mouseOveronElement( WebDriver driver,WebElement element)
 	{
 		act = new Actions(driver);
 		act.moveToElement(element).perform();
@@ -90,7 +91,7 @@ public class WebDriverUtelity
 	 * @param driver
 	 * @param element
 	 */
-	public void doubleClick(WebDriver driver,WebElement element)
+	public void doubleClick( WebDriver driver,WebElement element)
 	{
 		act= new Actions(driver);
 		act.doubleClick(element).perform();
@@ -100,7 +101,7 @@ public class WebDriverUtelity
 	 * @param driver
 	 * @param element
 	 */
-	public void rightclick(WebDriver driver,WebElement element )
+	public void rightclick( WebDriver driver,WebElement element )
 	{
 		act= new Actions(driver);
 		act.contextClick(element).perform();
@@ -111,15 +112,15 @@ public class WebDriverUtelity
 	 * @param driver
 	 */
 
-	public void waitforPageLoad( WebDriver driver)
+	public void waitforPageLoad(  )
 	{
-		driver.manage().timeouts().implicitlyWait(10 ,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
 	/**
 	 *this method is used to switch alert  window and click on ok
 	 * @param driver
 	 */
-	public void switchToalertWindowAndAccept(WebDriver driver)
+	public void switchToalertWindowAndAccept()
 	{
 		driver.switchTo().alert().accept();
 	}
@@ -127,7 +128,7 @@ public class WebDriverUtelity
 	 *this method is used to switch alert window and click on ok
 	 * @param driver
 	 */
-	public void switchToalertWindowAndDismiss(WebDriver driver)
+	public void switchToalertWindowAndDismiss()
 	{
 		driver.switchTo().alert().dismiss();
 	}
@@ -136,7 +137,7 @@ public class WebDriverUtelity
 	 * this method is used to switch to frame window based on index
 	 * @param
 	 */
-	public void switchToFrame(WebDriver driver, int index)
+	public void switchToFrame( int index)
 	{
 		driver.switchTo().frame(index);
 		
@@ -261,8 +262,8 @@ public class WebDriverUtelity
 	 */
 	public void scrollTillEnd()
 	{
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollTo[0,document.body.scrollHeight]");
+		 jse=(JavascriptExecutor)driver;
+		jse.executeScript("window.scrollTo[0,document.body.scrollHeight]");
 	}
 
 	/**
@@ -295,7 +296,7 @@ public class WebDriverUtelity
 		js.executeScript("arguments[0].value=arguments=[1]",element,data );
 	}
 	/**
-	 * this method is used to clock on element directly on DOM whenit is not clocking
+	 * this method is used to clock on element directly on DOM when it is not clicking
 	 */
 	
 	public void elementNotIntercepted(WebElement element)

@@ -2,9 +2,9 @@ package com.trendeverse.genericUtility;
 
 import com.aventstack.extentreports.ExtentTest;
 
-public class ThreadSafe 
+    class ThreadSafe 
 {
-private static  ThreadLocal<WebDriverUtelity> webdriverUtility=new ThreadLocal<>();
+private static  ThreadLocal<WebDriverUtelity> webdriverUtility=new ThreadLocal<WebDriverUtelity>();
 public static WebDriverUtelity getwebdriverUtility() 
    {
 
@@ -18,7 +18,7 @@ public static void setWebdriverUtility(WebDriverUtelity swebdrUtelity)
   }
 
 //--------------------------------------------------------------------------------------------------
-private static ThreadLocal<ExtentTest> extentTest=new ThreadLocal<>();
+private static ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
 public static ExtentTest  getExtentTest()
   {
 	return extentTest.get();

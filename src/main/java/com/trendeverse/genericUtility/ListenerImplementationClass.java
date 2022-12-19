@@ -1,6 +1,5 @@
 package com.trendeverse.genericUtility;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.logging.FileHandler;
 
@@ -23,7 +22,7 @@ public class ListenerImplementationClass implements ITestListener
 	private ExtentReports report;
 	private ExtentTest test;
 
-		
+
 
 	@Override
 	public void onStart(ITestContext result) {
@@ -44,32 +43,34 @@ public class ListenerImplementationClass implements ITestListener
 	}
 
 	@Override
-	public void onFinish(ITestContext result) {
-		System.out.println("on finish"+ Thread.currentThread().getId());
+	public void onFinish(ITestContext result)
+	{
 		report.flush();
+		System.out.println("on finish"+ Thread.currentThread().getId());
+
 
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) 
 	{
+		test = report.createTest(result.getMethod().getMethodName());
+		ThreadSafe.setExtentTest(test); 
 		System.out.println("execution starts from here"+Thread.currentThread().getId());	
-		 ExtentTest  test = report.createTest(result.getMethod().getMethodName());
-		 ThreadSafe.setExtentTest(test); 
+
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) 
 	{
-		System.out.println("TestExecuted successfully"+Thread.currentThread().getId());
 		ThreadSafe.getExtentTest().pass(result.getMethod().getMethodName()+"is passed ");
+		System.out.println("TestExecuted successfully"+Thread.currentThread().getId());
 
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result)
 	{
-		System.out.println("test case fail"+Thread.currentThread().getId());
 		ThreadSafe.getExtentTest().fail(result.getMethod().getMethodName()+"test case failed");
 		ThreadSafe.getExtentTest().fail(result.getThrowable());//get the exception information
 
@@ -78,12 +79,12 @@ public class ListenerImplementationClass implements ITestListener
 
 		String screenShot = ThreadSafe.getwebdriverUtility().takesscreenshot2();
 		ThreadSafe.getExtentTest().addScreenCaptureFromBase64String(screenShot);
+		System.out.println("test case fail"+Thread.currentThread().getId());
 
 
 	}
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("on skipped"+ Thread.currentThread().getId());
 		ThreadSafe.getExtentTest().skip(result.getMethod().getMethodName()+"is skipped");
 		ThreadSafe.getExtentTest().skip(result.getThrowable());
 
@@ -96,6 +97,7 @@ public class ListenerImplementationClass implements ITestListener
 			e.printStackTrace();
 		}
 		ThreadSafe.getExtentTest().addScreenCaptureFromPath(screenshot);
+		System.out.println("on skipped"+ Thread.currentThread().getId());
 
 
 	}

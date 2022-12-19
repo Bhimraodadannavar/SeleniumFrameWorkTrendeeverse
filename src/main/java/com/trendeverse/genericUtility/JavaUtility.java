@@ -26,6 +26,7 @@ public class JavaUtility {
 		 Date date = new Date();
 		 String dateAndTime = date.toString();
 		 
+		 
 		String YYYY = dateAndTime.split(" ")[5];
 		String DD = dateAndTime.split(" ")[2];
 		int MM = date.getMonth()+1;

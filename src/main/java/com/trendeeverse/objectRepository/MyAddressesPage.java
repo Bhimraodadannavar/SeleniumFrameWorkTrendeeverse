@@ -17,6 +17,10 @@ public class MyAddressesPage
 	@FindBy(xpath="//h3[text()='Aishwarya']") 
 	private WebElement addressestext;
 	
+
+	@FindBy(xpath="//div[text()=\"My Addresses\"]")
+	private WebElement myAddress;
+	
 	
 	public  MyAddressesPage(WebDriver driver)
 	{
@@ -37,6 +41,12 @@ public class MyAddressesPage
 	public String getTextaddressNametext()
 	{
 		return addressestext.getText();
+		
+	}
+	
+	public void clickOnAddresses()
+	{
+		myAddress.click();
 		
 	}
 

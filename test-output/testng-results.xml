@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-15T09:27:09 IST" name="Suite" finished-at="2022-12-15T09:27:09 IST" duration-ms="53">
+  <suite started-at="2022-12-17T22:01:32 IST" name="Default suite" finished-at="2022-12-17T22:01:32 IST" duration-ms="71">
     <groups>
-      <group name="Reg">
-        <method signature="TestNGPractice1.test2()[pri:0, instance:com.practice.TestNGPractice1@15bbf42f]" name="test2" class="com.practice.TestNGPractice1"/>
-        <method signature="TestNGPractice2.test2()[pri:0, instance:com.practice.TestNGPractice2@ea6147e]" name="test2" class="com.practice.TestNGPractice2"/>
-        <method signature="TestNgPractice3.test2()[pri:0, instance:com.practice.TestNgPractice3@1e683a3e]" name="test2" class="com.practice.TestNgPractice3"/>
-      </group> <!-- Reg -->
     </groups>
-    <test started-at="2022-12-15T09:27:09 IST" name="RegressionTestCases" finished-at="2022-12-15T09:27:09 IST" duration-ms="53">
-      <class name="com.practice.TestNGPractice1">
-        <test-method signature="test2()[pri:0, instance:com.practice.TestNGPractice1@15bbf42f]" started-at="2022-12-15T09:27:09 IST" name="test2" finished-at="2022-12-15T09:27:09 IST" duration-ms="8" status="PASS">
+    <test started-at="2022-12-17T22:01:32 IST" name="Default test" finished-at="2022-12-17T22:01:32 IST" duration-ms="71">
+      <class name="com.practice.Prioriry">
+        <test-method signature="test1()[pri:-1, instance:com.practice.Prioriry@31e5415e]" started-at="2022-12-17T22:01:32 IST" name="test1" description="To short" finished-at="2022-12-17T22:01:32 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test3()[pri:0, instance:com.practice.Prioriry@31e5415e]" started-at="2022-12-17T22:01:32 IST" name="test3" finished-at="2022-12-17T22:01:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test2()[pri:-2, instance:com.practice.Prioriry@31e5415e]" started-at="2022-12-17T22:01:32 IST" name="test2" finished-at="2022-12-17T22:01:32 IST" depends-on-methods="com.practice.Prioriry.test3" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-      </class> <!-- com.practice.TestNGPractice1 -->
-      <class name="com.practice.TestNGPractice2">
-        <test-method signature="test2()[pri:0, instance:com.practice.TestNGPractice2@ea6147e]" started-at="2022-12-15T09:27:09 IST" name="test2" finished-at="2022-12-15T09:27:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- com.practice.TestNGPractice2 -->
-      <class name="com.practice.TestNgPractice3">
-        <test-method signature="test2()[pri:0, instance:com.practice.TestNgPractice3@1e683a3e]" started-at="2022-12-15T09:27:09 IST" name="test2" finished-at="2022-12-15T09:27:09 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- com.practice.TestNgPractice3 -->
-    </test> <!-- RegressionTestCases -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.practice.Prioriry -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

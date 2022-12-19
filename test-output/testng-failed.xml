@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.myaddress.FacebookTest">
+      <class name="com.practice.DataProviderUsingArray2">
         <methods>
-          <include name="loginFacebook"/>
+          <include name="getData"/>
         </methods>
-      </class> <!-- com.ecommerce.myaddress.FacebookTest -->
+      </class> <!-- com.practice.DataProviderUsingArray2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

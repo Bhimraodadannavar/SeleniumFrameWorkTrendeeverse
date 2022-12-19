@@ -11,9 +11,9 @@ public enum SheetName
 	
 	private String shtName;
 	//setter (constructor)
-	private SheetName(String stName)
+	private SheetName(String shtName)
 	{
-		this.shtName=stName;
+		this.shtName=shtName;
 	}
 	//getters
 	public String getSheeCelltName()

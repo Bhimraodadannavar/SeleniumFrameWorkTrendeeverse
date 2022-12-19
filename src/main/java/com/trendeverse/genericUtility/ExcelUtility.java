@@ -104,9 +104,9 @@ public class ExcelUtility
 		Sheet shee = book.getSheet(sheetName);
 		int lastRowNumber = shee.getLastRowNum();//return index
 		short lastcellNumber = shee.getRow(0).getLastCellNum();//return size
-		//df= new DataFormatter();
+		df= new DataFormatter();
 		String[][] arr= new String[lastRowNumber][lastcellNumber];
-		for(int i=0; i<lastRowNumber;i++)
+		for(int i=0; i<=lastRowNumber;i++)
 		{
 			for(int j=0;j<lastcellNumber;j++)
 			{
