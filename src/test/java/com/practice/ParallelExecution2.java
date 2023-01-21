@@ -19,37 +19,5 @@ public class ParallelExecution2 {
 		driver.quit();
 	}
 
-	@Test
-	public void test6() {
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.google.com");
-		System.out.println(Thread.currentThread().getName());
-		driver.quit();
-	}
-
-	@Test
-	public void test7() {
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.google.com");
-		System.out.println(Thread.currentThread().getName());
-		driver.quit();
-	}
-
-	@Test
-	public void test8() {
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.google.com");
-		System.out.println(Thread.currentThread().getName());
-		driver.quit();
-	}
-
+	
 }

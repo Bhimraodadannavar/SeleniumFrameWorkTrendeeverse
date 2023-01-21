@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-17T22:01:32 IST" name="Default suite" finished-at="2022-12-17T22:01:32 IST" duration-ms="71">
+  <suite started-at="2023-01-18T17:52:20 IST" name="Suite" finished-at="2023-01-18T17:52:37 IST" duration-ms="16546">
     <groups>
+      <group name="sanity">
+        <method signature="ParallelEecution1.test1()[pri:0, instance:com.practice.ParallelEecution1@33990a0c]" name="test1" class="com.practice.ParallelEecution1"/>
+        <method signature="ParallelEecution1.test1()[pri:0, instance:com.practice.ParallelEecution1@58695725]" name="test1" class="com.practice.ParallelEecution1"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-12-17T22:01:32 IST" name="Default test" finished-at="2022-12-17T22:01:32 IST" duration-ms="71">
-      <class name="com.practice.Prioriry">
-        <test-method signature="test1()[pri:-1, instance:com.practice.Prioriry@31e5415e]" started-at="2022-12-17T22:01:32 IST" name="test1" description="To short" finished-at="2022-12-17T22:01:32 IST" duration-ms="11" status="PASS">
+    <test started-at="2023-01-18T17:52:20 IST" name="Test2" finished-at="2023-01-18T17:52:37 IST" duration-ms="16219">
+      <class name="com.practice.ParallelExecution3">
+        <test-method signature="test9()[pri:0, instance:com.practice.ParallelExecution3@18d87d80]" started-at="2023-01-18T17:52:20 IST" name="test9" finished-at="2023-01-18T17:52:28 IST" duration-ms="7819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+      </class> <!-- com.practice.ParallelExecution3 -->
+      <class name="com.practice.ParallelEecution1">
+        <test-method signature="test1()[pri:0, instance:com.practice.ParallelEecution1@58695725]" started-at="2023-01-18T17:52:33 IST" name="test1" finished-at="2023-01-18T17:52:37 IST" duration-ms="3836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test3()[pri:0, instance:com.practice.Prioriry@31e5415e]" started-at="2022-12-17T22:01:32 IST" name="test3" finished-at="2022-12-17T22:01:32 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.practice.ParallelEecution1 -->
+      <class name="com.practice.ParallelExecution2">
+        <test-method signature="test5()[pri:0, instance:com.practice.ParallelExecution2@618425b5]" started-at="2023-01-18T17:52:28 IST" name="test5" finished-at="2023-01-18T17:52:33 IST" duration-ms="4516" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test2()[pri:-2, instance:com.practice.Prioriry@31e5415e]" started-at="2022-12-17T22:01:32 IST" name="test2" finished-at="2022-12-17T22:01:32 IST" depends-on-methods="com.practice.Prioriry.test3" duration-ms="2" status="PASS">
+        </test-method> <!-- test5 -->
+      </class> <!-- com.practice.ParallelExecution2 -->
+    </test> <!-- Test2 -->
+    <test started-at="2023-01-18T17:52:20 IST" name="Test1" finished-at="2023-01-18T17:52:37 IST" duration-ms="16546">
+      <class name="com.practice.ParallelExecution3">
+        <test-method signature="test9()[pri:0, instance:com.practice.ParallelExecution3@31e5415e]" started-at="2023-01-18T17:52:20 IST" name="test9" finished-at="2023-01-18T17:52:28 IST" duration-ms="7788" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- com.practice.Prioriry -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test9 -->
+      </class> <!-- com.practice.ParallelExecution3 -->
+      <class name="com.practice.ParallelEecution1">
+        <test-method signature="test1()[pri:0, instance:com.practice.ParallelEecution1@33990a0c]" started-at="2023-01-18T17:52:33 IST" name="test1" finished-at="2023-01-18T17:52:37 IST" duration-ms="4163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.practice.ParallelEecution1 -->
+      <class name="com.practice.ParallelExecution2">
+        <test-method signature="test5()[pri:0, instance:com.practice.ParallelExecution2@15aab8c6]" started-at="2023-01-18T17:52:28 IST" name="test5" finished-at="2023-01-18T17:52:33 IST" duration-ms="4548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+      </class> <!-- com.practice.ParallelExecution2 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

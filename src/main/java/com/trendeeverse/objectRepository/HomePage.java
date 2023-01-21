@@ -37,13 +37,7 @@ public class HomePage
 	@FindBy(xpath="//*[name()='svg'  and @data-testid='LogoutIcon']")
 	private WebElement logOutButton;
 	
-	
-	
-	
-	
-	
-	
-	
+
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this );

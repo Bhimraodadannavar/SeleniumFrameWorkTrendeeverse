@@ -66,6 +66,7 @@ public class   AddressModuleTest extends BaseClass
 
 		String mail = pFileUtility.getDataFromPropertyFile(PropertyFileKeys.MAIL.convertToString());
 		String password = pFileUtility.getDataFromPropertyFile(PropertyFileKeys.PASSWORD.convertToString());
+		
 		login.clickOnShopperLoginButton();
 		login.loginActions(mail,password);
 

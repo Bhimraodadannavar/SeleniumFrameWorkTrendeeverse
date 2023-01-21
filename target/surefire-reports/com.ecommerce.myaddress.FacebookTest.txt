@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ecommerce.myaddress.FacebookTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.046 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.57 s - in com.ecommerce.myaddress.FacebookTest

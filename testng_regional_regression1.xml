@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.ecommerce.myaddress.CartTest" >
+      <class name="com.ecommerce.myaddress.CartTest">
       <methods>
       <include name="AddingProductToTheCart"/>
       </methods>

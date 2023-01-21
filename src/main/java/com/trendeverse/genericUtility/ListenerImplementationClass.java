@@ -48,7 +48,6 @@ public class ListenerImplementationClass implements ITestListener
 		report.flush();
 		System.out.println("on finish"+ Thread.currentThread().getId());
 
-
 	}
 
 	@Override

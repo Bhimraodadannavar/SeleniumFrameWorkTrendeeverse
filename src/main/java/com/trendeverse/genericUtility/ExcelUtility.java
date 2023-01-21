@@ -3,6 +3,7 @@ package com.trendeverse.genericUtility;
 
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -37,10 +38,10 @@ public class ExcelUtility
 	public void openExcel() throws EncryptedDocumentException, IOException
 	{
 
-		 FileInputStream fisexcel = new FileInputStream(IConstantPath.EXCEL_PATH);
+		 fisexcel = new FileInputStream(IConstantPath.EXCEL_PATH);
 		book= WorkbookFactory.create(fisexcel);
 	}
-	
+
 	/**
 	 * This method is used to get the Data from the Excel
 
@@ -60,7 +61,7 @@ public class ExcelUtility
 		String data = df.formatCellValue(cel);
 		return data;
 	}
-	
+
 	/**
 	 * This method is used to set the into the excel
 	 * @param excelPath
@@ -116,5 +117,21 @@ public class ExcelUtility
 		return arr;
 
 	}
+	
+	public void writemultipleData(String excel_Path,String SheetName,int row,String url, int responsecode) throws EncryptedDocumentException, IOException
+	{
+		FileInputStream fis =new FileInputStream(excel_Path);
+		Workbook book1 = WorkbookFactory.create(fis);
+		Sheet shee = book1.getSheet(SheetName);
+		Row row1 = shee.getRow(row);
+		row1.createCell(0).setCellValue(url);
+		row1.createCell(1).setCellValue(responsecode);
+		
+		FileOutputStream fos= new FileOutputStream(excel_Path);
+		book1.write(fos);
+		
+			
+	}
+	
 
 }

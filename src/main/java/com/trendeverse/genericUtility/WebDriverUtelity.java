@@ -235,7 +235,7 @@ public class WebDriverUtelity
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			count++;
+			count++;   
 			break;
 		}
 
@@ -286,7 +286,7 @@ public class WebDriverUtelity
 	
 
 	/**
-	 * this method is used enter the value using javascript executor
+	 * this method is used enter the value using java script executor
 	 * @param element
 	 * @param data
 	 */

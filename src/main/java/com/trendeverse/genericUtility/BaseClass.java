@@ -20,7 +20,7 @@ import com.trendeeverse.objectRepository.LoginPage;
 public class BaseClass 
 {	
 
-//	public static WebDriver sDriver;
+	//	public static WebDriver sDriver;
 	protected WebDriverUtelity wu;
 	protected PFileUtility pFileUtility;
 	protected ExcelUtility excelUtility;
@@ -38,7 +38,7 @@ public class BaseClass
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
-	//@Parameters("browser")
+	//@Parameters({"browser","url"})
 	@BeforeClass(alwaysRun = true)
 	public void classSetUp() throws EncryptedDocumentException, IOException
 	{
@@ -49,27 +49,24 @@ public class BaseClass
 
 		//open the propertyfile
 		pFileUtility.openproprtyfile();
-  
+
 		//read the common data from property file
 		String browser = pFileUtility.getDataFromPropertyFile(PropertyFileKeys.BROWSER.convertToString());
 		String url = pFileUtility.getDataFromPropertyFile(PropertyFileKeys.URL.convertToString());
-		 timeOut = Long.parseLong(pFileUtility.getDataFromPropertyFile("timeOut"));
+		timeOut = Long.parseLong(pFileUtility.getDataFromPropertyFile("timeOut"));
 
-		 
 		//Open the Excel
 		excelUtility.openExcel();
-      
+
 		//launch the browser
 		ThreadSafe.setWebdriverUtility(wu);
 		driver = wu.launchApplication(browser, timeOut, url);
-		
-		  
+
 		//POM class object creation 
 		home= new HomePage(driver);
 		login= new LoginPage(driver);
-		home.clickOnLogin();
-		
-		
+		//home.clickOnLogin();
+
 	}
 	/**
 	 * used to login to the application 
@@ -79,15 +76,15 @@ public class BaseClass
 	{
 		home.clickOnLogin();
 	}
-	
+
 	@AfterMethod(alwaysRun = true)
 	public void methodtearDownSetUp() throws InterruptedException
 	{
 		home.handleclickInteractedOnAccountSettings(wu);
 		home.clickOnLogOutButton();
-		
+
 	}
-	
+
 	/**
 	 * used to close the browser
 	 */
