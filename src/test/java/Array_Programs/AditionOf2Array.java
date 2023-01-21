@@ -14,6 +14,7 @@ public class AditionOf2Array
 		}
 		for(int i=0; i<length;i++)
 		{
+			//Hi
 			try
 			{
 			System.out.print(a[i]+" "+b[i]);
