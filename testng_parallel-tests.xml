@@ -12,8 +12,13 @@
   
   <test  name="Test2">
     <classes>
+      <class name="com.practice.ParallelExecution3"/>
+    </classes>
+    </test>
+     <test name="Test3">
+    <classes>
+      <class name="com.practice.ParallelEecution1"/>
       <class name="com.practice.ParallelExecution2"/>
     </classes>
-    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

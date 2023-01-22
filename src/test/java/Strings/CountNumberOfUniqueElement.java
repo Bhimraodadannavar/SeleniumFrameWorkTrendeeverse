@@ -23,7 +23,7 @@ public class CountNumberOfUniqueElement {
 					count++;
 				}
 			}
-
+			
 			if(count==1)
 			{
 				System.out.println(ch+" is repeating  " +count+" times");

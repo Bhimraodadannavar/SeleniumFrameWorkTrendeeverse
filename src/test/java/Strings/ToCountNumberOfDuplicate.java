@@ -19,12 +19,12 @@ public class ToCountNumberOfDuplicate
 			int count=0;
 			for(int i=0; i<s.length();i++)
 			{
-				if(ch==s.charAt(i))
-				{
-					count++;
-				}
-			}
-
+				if(ch==s.charAt(i))//ch= t e s r  charAT(i)=t e s t e r
+				{                   //
+					count++;        //
+				}                    //
+			}                       //
+                                     //
 			if(count>1)
 			{
 				System.out.println(ch+" is repeating  " +count+" times");

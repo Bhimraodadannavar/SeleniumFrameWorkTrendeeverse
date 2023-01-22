@@ -20,13 +20,13 @@ public class ReverseString
 		//			}
 		//			
 
-		//		3.String s = "Bangalore";
-		//		   String rev = "";
-		//		   for(int i=s.length()-1; i<=0; i--)
-		//		  {
-		//			rev=rev+s.charAt(i);
-		//		   }
-		//		  System.out.print(rev);
+		String s = "Bangalore";
+		String rev = "";
+		for(int i=s.length()-1; i<=0; i--)
+		{
+			rev=rev+s.charAt(i);
+		}
+		System.out.print(rev);
 
 		//		4. String st = "Bangalore";
 		//		   char[] s=st.toCharArray();

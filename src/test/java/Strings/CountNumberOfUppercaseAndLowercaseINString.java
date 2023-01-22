@@ -7,7 +7,7 @@ public class CountNumberOfUppercaseAndLowercaseINString
 		String s = "BAnGaloRe";
 		int uppercase = 0;
 		int lowercase = 0;
-		for(int i=s.length()-1;i>=0;i--)
+		for(int i=0;i<s.length();i++)
 		{
 			if(s.charAt(i)>='A'&& s.charAt(i)<='Z')
 			{

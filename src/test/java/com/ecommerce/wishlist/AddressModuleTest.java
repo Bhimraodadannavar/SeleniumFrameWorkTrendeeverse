@@ -44,7 +44,7 @@ public class   AddressModuleTest extends BaseClass
 	public void UserAddingAddress() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		String expectedResult = "Aishwarya";
-
+		
 		//read the data from excel
 		String name=excelUtility.getDataFromExcel( SheetName.ADDRESS.getSheeCelltName(),1,1);
 		String houseinfo=excelUtility.getDataFromExcel(SheetName.ADDRESS.getSheeCelltName(),2,2);
@@ -52,7 +52,6 @@ public class   AddressModuleTest extends BaseClass
 		String landmark=excelUtility.getDataFromExcel( SheetName.ADDRESS.getSheeCelltName(),2,4);
 		String pincode=excelUtility.getDataFromExcel(SheetName.ADDRESS.getSheeCelltName(),2,5);
 		String phoneno=excelUtility.getDataFromExcel( SheetName.ADDRESS.getSheeCelltName(),2,6);
-
 
 		//POM class Object Creation
 

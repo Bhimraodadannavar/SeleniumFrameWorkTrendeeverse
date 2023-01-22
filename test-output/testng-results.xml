@@ -2,52 +2,52 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-18T17:52:20 IST" name="Suite" finished-at="2023-01-18T17:52:37 IST" duration-ms="16546">
+  <suite started-at="2023-01-21T12:34:04 IST" name="Suite" finished-at="2023-01-21T12:34:16 IST" duration-ms="12527">
     <groups>
       <group name="sanity">
-        <method signature="ParallelEecution1.test1()[pri:0, instance:com.practice.ParallelEecution1@33990a0c]" name="test1" class="com.practice.ParallelEecution1"/>
-        <method signature="ParallelEecution1.test1()[pri:0, instance:com.practice.ParallelEecution1@58695725]" name="test1" class="com.practice.ParallelEecution1"/>
+        <method signature="ParallelEecution1.test1()[pri:0, instance:com.practice.ParallelEecution1@101952da]" name="test1" class="com.practice.ParallelEecution1"/>
+        <method signature="ParallelEecution1.test1()[pri:0, instance:com.practice.ParallelEecution1@4fb3ee4e]" name="test1" class="com.practice.ParallelEecution1"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2023-01-18T17:52:20 IST" name="Test2" finished-at="2023-01-18T17:52:37 IST" duration-ms="16219">
+    <test started-at="2023-01-21T12:34:04 IST" name="chromeTestRunner" finished-at="2023-01-21T12:34:16 IST" duration-ms="12527">
       <class name="com.practice.ParallelExecution3">
-        <test-method signature="test9()[pri:0, instance:com.practice.ParallelExecution3@18d87d80]" started-at="2023-01-18T17:52:20 IST" name="test9" finished-at="2023-01-18T17:52:28 IST" duration-ms="7819" status="PASS">
+        <test-method signature="test9()[pri:0, instance:com.practice.ParallelExecution3@1a4013]" started-at="2023-01-21T12:34:04 IST" name="test9" finished-at="2023-01-21T12:34:09 IST" duration-ms="4848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test9 -->
       </class> <!-- com.practice.ParallelExecution3 -->
       <class name="com.practice.ParallelEecution1">
-        <test-method signature="test1()[pri:0, instance:com.practice.ParallelEecution1@58695725]" started-at="2023-01-18T17:52:33 IST" name="test1" finished-at="2023-01-18T17:52:37 IST" duration-ms="3836" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.practice.ParallelEecution1@101952da]" started-at="2023-01-21T12:34:13 IST" name="test1" finished-at="2023-01-21T12:34:16 IST" duration-ms="3695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- com.practice.ParallelEecution1 -->
       <class name="com.practice.ParallelExecution2">
-        <test-method signature="test5()[pri:0, instance:com.practice.ParallelExecution2@618425b5]" started-at="2023-01-18T17:52:28 IST" name="test5" finished-at="2023-01-18T17:52:33 IST" duration-ms="4516" status="PASS">
+        <test-method signature="test5()[pri:0, instance:com.practice.ParallelExecution2@50b5ac82]" started-at="2023-01-21T12:34:09 IST" name="test5" finished-at="2023-01-21T12:34:13 IST" duration-ms="3938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test5 -->
       </class> <!-- com.practice.ParallelExecution2 -->
-    </test> <!-- Test2 -->
-    <test started-at="2023-01-18T17:52:20 IST" name="Test1" finished-at="2023-01-18T17:52:37 IST" duration-ms="16546">
+    </test> <!-- chromeTestRunner -->
+    <test started-at="2023-01-21T12:34:04 IST" name="fireFoxTestRunner" finished-at="2023-01-21T12:34:16 IST" duration-ms="12515">
       <class name="com.practice.ParallelExecution3">
-        <test-method signature="test9()[pri:0, instance:com.practice.ParallelExecution3@31e5415e]" started-at="2023-01-18T17:52:20 IST" name="test9" finished-at="2023-01-18T17:52:28 IST" duration-ms="7788" status="PASS">
+        <test-method signature="test9()[pri:0, instance:com.practice.ParallelExecution3@543588e6]" started-at="2023-01-21T12:34:04 IST" name="test9" finished-at="2023-01-21T12:34:09 IST" duration-ms="4912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test9 -->
       </class> <!-- com.practice.ParallelExecution3 -->
       <class name="com.practice.ParallelEecution1">
-        <test-method signature="test1()[pri:0, instance:com.practice.ParallelEecution1@33990a0c]" started-at="2023-01-18T17:52:33 IST" name="test1" finished-at="2023-01-18T17:52:37 IST" duration-ms="4163" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.practice.ParallelEecution1@4fb3ee4e]" started-at="2023-01-21T12:34:12 IST" name="test1" finished-at="2023-01-21T12:34:16 IST" duration-ms="3847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- com.practice.ParallelEecution1 -->
       <class name="com.practice.ParallelExecution2">
-        <test-method signature="test5()[pri:0, instance:com.practice.ParallelExecution2@15aab8c6]" started-at="2023-01-18T17:52:28 IST" name="test5" finished-at="2023-01-18T17:52:33 IST" duration-ms="4548" status="PASS">
+        <test-method signature="test5()[pri:0, instance:com.practice.ParallelExecution2@f5acb9d]" started-at="2023-01-21T12:34:09 IST" name="test5" finished-at="2023-01-21T12:34:12 IST" duration-ms="3706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test5 -->
       </class> <!-- com.practice.ParallelExecution2 -->
-    </test> <!-- Test1 -->
+    </test> <!-- fireFoxTestRunner -->
   </suite> <!-- Suite -->
 </testng-results>

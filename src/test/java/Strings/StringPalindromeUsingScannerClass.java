@@ -17,7 +17,7 @@ public class StringPalindromeUsingScannerClass
 				rev=rev+s.charAt(i);
 			}		
 
-			if(rev.equals(s))
+			if(rev.equalsIgnoreCase(s))
 			{
 				System.out.println("It is a palindrome");
 			}

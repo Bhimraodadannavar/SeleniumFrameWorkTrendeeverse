@@ -2,12 +2,13 @@ package SplitTheString;
 
 import java.util.LinkedHashSet;
 
-public class OccuranceOfEachWordInString {
-
+public class PrintPositionOfEachWordWithoutDuplicate 
+{
 	public static void main(String[] args) 
 	{
-		String st = "I am am from set-44 Batch";
-		String[]s=st.split(" ");
+
+		String st="I am am from SDET-44";
+		String[]	s=st.split(" ");
 		LinkedHashSet<String> set= new LinkedHashSet<>();
 
 		for(int i=0;i<s.length;i++)
@@ -16,18 +17,14 @@ public class OccuranceOfEachWordInString {
 		}
 		for(String str:set)
 		{
-			int count = 0;
 			for(int i=0;i<s.length;i++)
 			{
 				if(str.equals(s[i]))
 				{
-					count++;
+					System.out.println(str+" is in "+(i+1));
+					break;
 				}
 			}
-			System.out.println(str+"  is repeating  "+count+"  times");
-
 		}
-
 	}
-
 }

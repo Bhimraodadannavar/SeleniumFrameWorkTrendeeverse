@@ -4,7 +4,7 @@ public class ReverseTheGivenWord2
 {
 	public static void main(String[] args) 
 	{
-		String st= "I am from SET-44 Batch";
+		String st= "I am from SDET-44 Batch";
 		String[] s=st.split("");
 		for(int i=s.length-1;i>=0;i--)
 		{

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Public\Trendeeverse\testng_parallel_class.xml</span>
+                    <span>C:\Users\Public\Trendeeverse\testng_parallel_cross_browser.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -147,6 +147,28 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.practice.ParallelExecution2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.practice.ParallelEecution1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -188,52 +210,32 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.practice.ParallelExecution2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test5">
-                  </a> <!-- test5 -->
-                  <span class="method-name">test5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test5">
-                  </a> <!-- test5 -->
-                  <span class="method-name">test5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Public\Trendeeverse\testng_parallel_class.xml</span>
+            <span class="header-content">C:\Users\Public\Trendeeverse\testng_parallel_cross_browser.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;chromeTestRunner&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.practice.ParallelExecution3&quot;/&gt;
       &lt;class name=&quot;com.practice.ParallelExecution2&quot;/&gt;
       &lt;class name=&quot;com.practice.ParallelEecution1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+  &lt;/test&gt; &lt;!-- chromeTestRunner --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;fireFoxTestRunner&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;fireFox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.practice.ParallelExecution3&quot;/&gt;
       &lt;class name=&quot;com.practice.ParallelExecution2&quot;/&gt;
       &lt;class name=&quot;com.practice.ParallelEecution1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;/test&gt; &lt;!-- fireFoxTestRunner --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,10 +247,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (3 classes)</span>
+                <span class="test-name">chromeTestRunner (3 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test2 (3 classes)</span>
+                <span class="test-name">fireFoxTestRunner (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,32 +288,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test9')
 data.setCell(0, 2, 'com.practice.ParallelExecution3')
-data.setCell(0, 3, 7819);
+data.setCell(0, 3, 4912);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test9')
 data.setCell(1, 2, 'com.practice.ParallelExecution3')
-data.setCell(1, 3, 7788);
+data.setCell(1, 3, 4848);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test5')
 data.setCell(2, 2, 'com.practice.ParallelExecution2')
-data.setCell(2, 3, 4548);
+data.setCell(2, 3, 3938);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test5')
-data.setCell(3, 2, 'com.practice.ParallelExecution2')
-data.setCell(3, 3, 4516);
+data.setCell(3, 1, 'test1')
+data.setCell(3, 2, 'com.practice.ParallelEecution1')
+data.setCell(3, 3, 3847);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test1')
-data.setCell(4, 2, 'com.practice.ParallelEecution1')
-data.setCell(4, 3, 4163);
+data.setCell(4, 1, 'test5')
+data.setCell(4, 2, 'com.practice.ParallelExecution2')
+data.setCell(4, 3, 3706);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test1')
 data.setCell(5, 2, 'com.practice.ParallelEecution1')
-data.setCell(5, 3, 3836);
+data.setCell(5, 3, 3695);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -351,22 +353,22 @@ return data;
               <div class="chronological-class-name">com.practice.ParallelExecution2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test5</span>
-                <span class="method-start">7791 ms</span>
+                <span class="method-start">4855 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test5</span>
-                <span class="method-start">7823 ms</span>
+                <span class="method-start">4915 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.practice.ParallelEecution1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">12340 ms</span>
+                <span class="method-start">8628 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">12341 ms</span>
+                <span class="method-start">8796 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

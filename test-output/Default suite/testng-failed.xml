@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.GridPractice">
+      <class name="com.ecommerce.myaddress.CartTest">
         <methods>
-          <include name="test"/>
+          <include name="AddingProductToTheCart"/>
+          <include name="methodtearDownSetUp"/>
+          <include name="methodSetUP"/>
+          <include name="classSetUp"/>
+          <include name="classTearDownSetup"/>
         </methods>
-      </class> <!-- com.practice.GridPractice -->
+      </class> <!-- com.ecommerce.myaddress.CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
